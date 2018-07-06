@@ -9,14 +9,6 @@ const userSchema = new mongoose.Schema({
     firstname: { type: String },
     lastname: { type: String },
     questions: [{type: mongoose.Schema.Types.ObjectId, ref: 'Question'}]
-    // questions: [{
-    //     userId: mongoose.Schema.Types.ObjectId,
-    //     question: String,
-    //     answer: String,
-    //     correct: Number
-    // }]
-    // NEED TO CHANGE MODEL
-    // questions: { Type: object } 
 });
 
 userSchema.set('toObject', {
